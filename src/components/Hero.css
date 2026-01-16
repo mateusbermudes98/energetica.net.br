@@ -140,11 +140,20 @@
   align-items: center;
 }
 
+.hero-cta .btn {
+  white-space: nowrap;
+}
+
 .hero-btn-primary {
   width: 100%;
   max-width: 320px;
   font-size: 1rem;
   padding: 1rem 1.5rem;
+}
+
+.hero-cta .btn-outline {
+  width: 100%;
+  max-width: 320px;
 }
 
 /* Images Wrapper */
@@ -237,9 +246,11 @@
   .hero-cta {
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
   }
 
-  .hero-btn-primary {
+  .hero-btn-primary,
+  .hero-cta .btn-outline {
     width: auto;
     max-width: none;
   }
