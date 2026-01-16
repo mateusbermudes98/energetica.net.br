@@ -14,7 +14,8 @@
       "Bash(git -C /Users/adenisrodrigues/Documents/LOCALDEV/energetica.net.br commit -m \"$\\(cat <<''EOF''\nfix: Improve responsiveness and fix layout issues\n\n- Refactor Hero component with dedicated CSS file\n- Fix rating badge being cut off on mobile\n- Improve grid layouts for mobile \\(Services, Areas, Gallery, Testimonials\\)\n- Fix Google Maps link to correct URL\n- Better padding and spacing across all screen sizes\n- Add proper media queries for tablet and desktop\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
       "WebFetch(domain:energetica-net-br.vercel.app)",
       "Bash(git -C /Users/adenisrodrigues/Documents/LOCALDEV/energetica.net.br commit -m \"$\\(cat <<''EOF''\nfix: CTA buttons display inline on desktop without text wrapping\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
-      "Bash(git -C /Users/adenisrodrigues/Documents/LOCALDEV/energetica.net.br push)"
+      "Bash(git -C /Users/adenisrodrigues/Documents/LOCALDEV/energetica.net.br push)",
+      "Bash(git -C /Users/adenisrodrigues/Documents/LOCALDEV/energetica.net.br commit -m \"$\\(cat <<''EOF''\nfix: CTA benefits grid layout - 2x2 on mobile, 4 columns on desktop\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
     ]
   }
 }

@@ -110,13 +110,7 @@ export default function CTA() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3 }}
-            style={{
-              display: 'flex',
-              flexWrap: 'wrap',
-              justifyContent: 'center',
-              gap: '1rem',
-              marginBottom: '2.5rem',
-            }}
+            className="cta-benefits"
           >
             {benefits.map((benefit, index) => (
               <motion.div
@@ -125,17 +119,7 @@ export default function CTA() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.4 + index * 0.1 }}
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '0.5rem',
-                  background: 'rgba(0, 0, 0, 0.1)',
-                  padding: '0.5rem 1rem',
-                  borderRadius: '50px',
-                  fontSize: '0.9rem',
-                  fontWeight: 600,
-                  color: '#0f0f0f',
-                }}
+                className="cta-benefit-item"
               >
                 <FaCheckCircle size={16} />
                 {benefit}
@@ -200,10 +184,34 @@ export default function CTA() {
       </div>
 
       <style>{`
+        .cta-benefits {
+          display: grid;
+          grid-template-columns: repeat(2, auto);
+          justify-content: center;
+          gap: 0.75rem;
+          margin-bottom: 2.5rem;
+        }
+        .cta-benefit-item {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          background: rgba(0, 0, 0, 0.1);
+          padding: 0.5rem 1rem;
+          border-radius: 50px;
+          font-size: 0.85rem;
+          font-weight: 600;
+          color: #0f0f0f;
+          white-space: nowrap;
+        }
         @media (min-width: 480px) {
           .cta-buttons {
             flex-direction: row !important;
             justify-content: center;
+          }
+        }
+        @media (min-width: 900px) {
+          .cta-benefits {
+            grid-template-columns: repeat(4, auto);
           }
         }
       `}</style>
