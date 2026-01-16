@@ -1,0 +1,33 @@
+{
+  "name": "energetica.net.br",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mateusbermudes98/energetica.net.br.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/mateusbermudes98/energetica.net.br/issues"
+  },
+  "homepage": "https://github.com/mateusbermudes98/energetica.net.br#readme",
+  "dependencies": {
+    "framer-motion": "^12.26.2",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "react-icons": "^5.5.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.2",
+    "vite": "^7.3.1"
+  }
+}
