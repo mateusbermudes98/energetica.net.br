@@ -135,6 +135,8 @@ export default function Footer() {
                     fontSize: '0.95rem',
                     transition: 'color 0.3s',
                   }}
+                  data-gtm-click="whatsapp"
+                  data-gtm-location="footer"
                 >
                   <FaWhatsapp size={18} color="#25D366" />
                   (27) 99941-0684
@@ -151,6 +153,8 @@ export default function Footer() {
                     textDecoration: 'none',
                     fontSize: '0.95rem',
                   }}
+                  data-gtm-click="phone"
+                  data-gtm-location="footer"
                 >
                   <FaPhone size={16} color="#FFD700" />
                   (27) 99941-0684
@@ -219,6 +223,8 @@ export default function Footer() {
                 fontSize: '0.9rem',
                 fontWeight: 600,
               }}
+              data-gtm-click="whatsapp"
+              data-gtm-location="footer-hours"
             >
               <FaWhatsapp size={18} />
               Fale Conosco

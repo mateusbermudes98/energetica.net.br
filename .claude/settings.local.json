@@ -15,7 +15,9 @@
       "WebFetch(domain:energetica-net-br.vercel.app)",
       "Bash(git -C /Users/adenisrodrigues/Documents/LOCALDEV/energetica.net.br commit -m \"$\\(cat <<''EOF''\nfix: CTA buttons display inline on desktop without text wrapping\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
       "Bash(git -C /Users/adenisrodrigues/Documents/LOCALDEV/energetica.net.br push)",
-      "Bash(git -C /Users/adenisrodrigues/Documents/LOCALDEV/energetica.net.br commit -m \"$\\(cat <<''EOF''\nfix: CTA benefits grid layout - 2x2 on mobile, 4 columns on desktop\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
+      "Bash(git -C /Users/adenisrodrigues/Documents/LOCALDEV/energetica.net.br commit -m \"$\\(cat <<''EOF''\nfix: CTA benefits grid layout - 2x2 on mobile, 4 columns on desktop\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ]
   }
 }

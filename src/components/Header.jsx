@@ -15,6 +15,27 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  const handleNavClick = (e, href) => {
+    e.preventDefault()
+    setMobileMenuOpen(false)
+
+    // Small delay to let menu close animation start
+    setTimeout(() => {
+      const targetId = href.replace('#', '')
+      const element = document.getElementById(targetId)
+      if (element) {
+        const headerOffset = 80
+        const elementPosition = element.getBoundingClientRect().top
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        })
+      }
+    }, 100)
+  }
+
   const navItems = [
     { label: 'Serviços', href: '#servicos' },
     { label: 'Áreas', href: '#areas' },
@@ -96,12 +117,14 @@ export default function Header() {
             <motion.a
               key={item.href}
               href={item.href}
+              onClick={(e) => handleNavClick(e, item.href)}
               style={{
                 color: '#9ca3af',
                 textDecoration: 'none',
                 fontSize: '0.95rem',
                 fontWeight: 500,
                 transition: 'color 0.3s',
+                cursor: 'pointer',
               }}
               whileHover={{ color: '#FFD700', y: -2 }}
             >
@@ -123,6 +146,8 @@ export default function Header() {
               fontWeight: 600,
             }}
             className="phone-desktop"
+            data-gtm-click="phone"
+            data-gtm-location="header"
           >
             <FaPhone size={16} />
             {PHONE_NUMBER}
@@ -136,6 +161,8 @@ export default function Header() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             style={{ padding: '0.75rem 1.25rem' }}
+            data-gtm-click="whatsapp"
+            data-gtm-location="header"
           >
             <FaWhatsapp size={20} />
             <span className="btn-text-desktop">WhatsApp</span>
@@ -183,7 +210,7 @@ export default function Header() {
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: index * 0.1 }}
-                  onClick={() => setMobileMenuOpen(false)}
+                  onClick={(e) => handleNavClick(e, item.href)}
                   style={{
                     display: 'block',
                     padding: '1rem',
@@ -210,6 +237,8 @@ export default function Header() {
                     fontWeight: 600,
                     fontSize: '1.25rem',
                   }}
+                  data-gtm-click="phone"
+                  data-gtm-location="header-mobile"
                 >
                   <FaPhone size={18} />
                   {PHONE_NUMBER}

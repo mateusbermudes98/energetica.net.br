@@ -140,6 +140,9 @@ function ServiceCard({ service, index }) {
           fontWeight: 600,
           fontSize: '0.9rem',
         }}
+        data-gtm-click="whatsapp"
+        data-gtm-location="services-card"
+        data-gtm-service={service.title}
       >
         Solicitar agora
         <span style={{ fontSize: '1.2rem' }}>→</span>
@@ -209,6 +212,8 @@ export default function Services() {
             className="btn btn-whatsapp btn-large"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            data-gtm-click="whatsapp"
+            data-gtm-location="services"
           >
             <FaWhatsapp size={22} />
             SOLICITAR ORÇAMENTO GRÁTIS

@@ -99,6 +99,8 @@ export default function Hero() {
               className="btn btn-whatsapp btn-large hero-btn-primary"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
+              data-gtm-click="whatsapp"
+              data-gtm-location="hero"
             >
               <FaWhatsapp size={24} />
               CHAMAR ELETRICISTA AGORA
@@ -109,6 +111,8 @@ export default function Hero() {
               className="btn btn-outline btn-large"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
+              data-gtm-click="phone"
+              data-gtm-location="hero"
             >
               <FaPhone size={20} />
               LIGAR: (27) 99941-0684

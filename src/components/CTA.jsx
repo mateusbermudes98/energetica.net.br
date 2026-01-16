@@ -153,6 +153,8 @@ export default function CTA() {
                 textDecoration: 'none',
                 boxShadow: '0 10px 30px rgba(0, 0, 0, 0.3)',
               }}
+              data-gtm-click="whatsapp"
+              data-gtm-location="cta"
             >
               <FaWhatsapp size={24} />
               CHAMAR NO WHATSAPP
@@ -175,6 +177,8 @@ export default function CTA() {
                 textDecoration: 'none',
                 border: '2px solid rgba(0, 0, 0, 0.3)',
               }}
+              data-gtm-click="phone"
+              data-gtm-location="cta"
             >
               <FaPhone size={18} />
               (27) 99941-0684

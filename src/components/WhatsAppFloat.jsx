@@ -131,6 +131,8 @@ export default function WhatsAppFloat() {
           position: 'relative',
         }}
         aria-label="Chamar no WhatsApp"
+        data-gtm-click="whatsapp"
+        data-gtm-location="float"
       >
         {/* Pulse Ring */}
         <span style={{
