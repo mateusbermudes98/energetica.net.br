@@ -201,7 +201,7 @@ export default function Testimonials() {
         {/* Testimonials Grid */}
         <div style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
           gap: '1.5rem',
         }}>
           {testimonials.map((testimonial, index) => (
@@ -221,7 +221,7 @@ export default function Testimonials() {
           }}
         >
           <motion.a
-            href="https://www.google.com/maps/place/Mateus+Eletricista+(En%C3%A9rgica+Solu%C3%A7%C3%B5es+El%C3%A9tricas)"
+            href="https://maps.app.goo.gl/orT4AUizHyemHpgq6"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}

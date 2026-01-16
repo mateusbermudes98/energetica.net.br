@@ -116,7 +116,7 @@ export default function Areas() {
 
         <div style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))',
           gap: '1rem',
           marginBottom: '3rem',
         }}>
@@ -134,7 +134,7 @@ export default function Areas() {
             background: 'linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, rgba(255, 165, 0, 0.05) 100%)',
             border: '1px solid rgba(255, 215, 0, 0.2)',
             borderRadius: '20px',
-            padding: '2.5rem',
+            padding: '1.5rem',
             textAlign: 'center',
           }}
         >

@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create:*)",
+      "Bash(npm init -y)",
+      "Bash(npm pkg:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run build:*)",
+      "Bash(git -C /Users/adenisrodrigues/Documents/LOCALDEV/energetica.net.br status)",
+      "Bash(git -C /Users/adenisrodrigues/Documents/LOCALDEV/energetica.net.br add .gitignore index.html package-lock.json package.json src/ vercel.json vite.config.js)",
+      "Bash(git -C /Users/adenisrodrigues/Documents/LOCALDEV/energetica.net.br commit -m \"$\\(cat <<''EOF''\nfeat: Create React landing page for Energica Solucoes Eletricas\n\n- Modern React 19 + Vite setup with Framer Motion animations\n- Responsive design optimized for mobile-first conversion\n- Components: Header, Hero, Services, Areas, Testimonials, Gallery, CTA, Footer\n- WhatsApp floating button with tooltip for lead generation\n- SEO optimized with keywords for Google Ads campaigns\n- Schema.org structured data for local business\n- Urgency bar with countdown timer\n- Lightbox gallery for work showcase\n- 24h emergency electrician service landing page\n- Areas covered: Praia Grande, Jacaraipe, Nova Almeida, Aracruz, Fundao\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git -C /Users/adenisrodrigues/Documents/LOCALDEV/energetica.net.br push -u origin main)",
+      "Bash(git -C /Users/adenisrodrigues/Documents/LOCALDEV/energetica.net.br add -A)",
+      "Bash(git -C /Users/adenisrodrigues/Documents/LOCALDEV/energetica.net.br commit -m \"$\\(cat <<''EOF''\nfix: Improve responsiveness and fix layout issues\n\n- Refactor Hero component with dedicated CSS file\n- Fix rating badge being cut off on mobile\n- Improve grid layouts for mobile \\(Services, Areas, Gallery, Testimonials\\)\n- Fix Google Maps link to correct URL\n- Better padding and spacing across all screen sizes\n- Add proper media queries for tablet and desktop\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
+    ]
+  }
+}

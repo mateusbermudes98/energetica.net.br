@@ -55,7 +55,7 @@ function ServiceCard({ service, index }) {
         background: 'linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%)',
         border: service.urgent ? '1px solid rgba(239, 68, 68, 0.3)' : '1px solid rgba(255, 255, 255, 0.1)',
         borderRadius: '20px',
-        padding: '2rem',
+        padding: '1.5rem',
         position: 'relative',
         overflow: 'hidden',
         cursor: 'pointer',
@@ -183,7 +183,7 @@ export default function Services() {
 
         <div style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
           gap: '1.5rem',
         }}>
           {services.map((service, index) => (
