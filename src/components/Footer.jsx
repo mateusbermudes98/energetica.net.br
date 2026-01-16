@@ -262,8 +262,27 @@ export default function Footer() {
           <p style={{
             color: '#6b7280',
             fontSize: '0.875rem',
+            marginBottom: '0.5rem',
           }}>
             © {currentYear} Enérgica Soluções Elétricas - Mateus Eletricista. Todos os direitos reservados.
+          </p>
+          <p style={{
+            color: '#4b5563',
+            fontSize: '0.75rem',
+          }}>
+            Desenvolvido por{' '}
+            <a
+              href="https://tecnovix.com.br"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: '#FFD700',
+                textDecoration: 'none',
+                fontWeight: 500,
+              }}
+            >
+              @tecnovix
+            </a>
           </p>
         </div>
       </div>
