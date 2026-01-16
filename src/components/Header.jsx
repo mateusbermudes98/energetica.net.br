@@ -114,22 +114,22 @@ export default function Header() {
           alignItems: 'center',
         }} className="desktop-nav">
           {navItems.map((item) => (
-            <motion.a
+            <a
               key={item.href}
               href={item.href}
               onClick={(e) => handleNavClick(e, item.href)}
+              className="nav-link"
               style={{
                 color: '#9ca3af',
                 textDecoration: 'none',
                 fontSize: '0.95rem',
                 fontWeight: 500,
-                transition: 'color 0.3s',
+                transition: 'all 0.3s',
                 cursor: 'pointer',
               }}
-              whileHover={{ color: '#FFD700', y: -2 }}
             >
               {item.label}
-            </motion.a>
+            </a>
           ))}
         </nav>
 
@@ -203,13 +203,10 @@ export default function Header() {
             }}
           >
             <div style={{ padding: '1rem' }}>
-              {navItems.map((item, index) => (
-                <motion.a
+              {navItems.map((item) => (
+                <a
                   key={item.href}
                   href={item.href}
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: index * 0.1 }}
                   onClick={(e) => handleNavClick(e, item.href)}
                   style={{
                     display: 'block',
@@ -222,7 +219,7 @@ export default function Header() {
                   }}
                 >
                   {item.label}
-                </motion.a>
+                </a>
               ))}
               <div style={{ padding: '1rem', textAlign: 'center' }}>
                 <a
@@ -250,6 +247,10 @@ export default function Header() {
       </AnimatePresence>
 
       <style>{`
+        .nav-link:hover {
+          color: #FFD700 !important;
+          transform: translateY(-2px);
+        }
         @media (min-width: 768px) {
           .desktop-nav { display: flex !important; }
           .phone-desktop { display: flex !important; }
